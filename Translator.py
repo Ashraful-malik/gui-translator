@@ -31,9 +31,6 @@ window.geometry("950x400")
 window.title("Translator")
 window.resizable(False, False)
 
-# this is a title text inside window
-title_label = Label(window, text="words Translator", font="arial 30 bold",
-                    fg="blue", anchor='w', bg='Skyblue')
 
 # this combobox for choose language for translate
 language = StringVar()
@@ -83,6 +80,5 @@ choose_language.grid(row=1, column=1)
 translate_btn.grid(row=3, column=0, columnspan=3, pady=8)
 textbox1.grid(row=2, column=1)
 textbox2.grid(row=2, column=2)
-title_label.grid(row=0, column=2)
 mic_button.grid(row=1, column=4)
 window.mainloop()
